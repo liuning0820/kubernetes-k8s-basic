@@ -1,4 +1,4 @@
-# Play With K8S using minibube on Azure Ubuntu VM
+# Play With K8S using minikube on Azure Ubuntu VM
 
 ## What is minikube
 
@@ -6,7 +6,12 @@ minikube implements a local Kubernetes cluster on macOS, Linux, and Windows.
 
 ## Install minikube
 
+[install minikube](https://minikube.sigs.k8s.io/docs/start/)
+
 ```sh
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
+   && sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 minikube version
 
@@ -22,10 +27,12 @@ sudo minikube start --vm-driver=none
 sudo minikube status
 sudo minikube addons enable dashboard
 sudo minikube dashboard --url
-kubectl version
+
+
+sudo kubectl version
 
 # Cluster details
-kubectl cluster-info
+sudo kubectl cluster-info
 # This command shows all nodes that can be used to host our applications.
 kubectl get nodes
 
@@ -75,3 +82,5 @@ minikube delete
 ## Reference
 
 - [hello-minikube](https://kubernetes.io/docs/tutorials/hello-minikube/)
+- [minikube src](https://github.com/kubernetes/minikube)
+- [kubernetes-basic](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
