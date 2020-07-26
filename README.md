@@ -13,8 +13,6 @@
 
 <!-- /TOC -->
 
-Create Cluster -> Create Deployment -> Explore Your App in the Pods
-
 ## What's Kubernetes
 
 Kubernetes 用于自动部署，扩展和管理容器化应用程序的开源系统。
